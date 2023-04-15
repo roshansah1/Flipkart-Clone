@@ -1,0 +1,23 @@
+.homepage{
+    text-align: center;
+    background-color: #f1f3f6;
+}
+
+.MuiCardMedia-img{
+    transition: all .3s ease-in-out;
+}
+
+.MuiCardMedia-img:hover{
+    transform: scale(1.1);
+}
+
+
+@media only Screen and (max-width: 900px){
+    .box_list{
+        width: 42% !important;
+    }
+
+    .MuiTypography-gutterBottom{
+        font-size: 13px !important;
+    }
+}
