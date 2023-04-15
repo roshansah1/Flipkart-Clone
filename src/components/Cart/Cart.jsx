@@ -1,8 +1,8 @@
-import React, { useContext, useEffect, useState } from 'react'
-import { currentProductDetails } from "../../App";
+import React, {  useEffect, useState } from 'react'
+// import { currentProductDetails } from "../../App";
 import "./cart.css"
 import { useSelector, useDispatch } from 'react-redux';
-import { delCart, remCart, addCart, totalPrice } from '../redux/action';
+import { delCart, remCart, addCart } from '../redux/action';
 import { useNavigate } from 'react-router-dom';
 
 const Cart = () => {

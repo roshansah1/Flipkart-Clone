@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { makeStyles } from "@material-ui/core/styles";
+// import { makeStyles } from "@material-ui/core/styles";
 import CarouselComp from "../Banner/CarouselComp";
 import { currentProductDetails } from "../../App";
 import './style.css'
@@ -14,21 +14,21 @@ import {
 } from "@material-ui/core";
 import { useNavigate } from "react-router-dom";
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    "& > *": {
-      margin: theme.spacing(1),
-      width: "25ch"
-    }
-  },
-  flex: {
+// const useStyles = makeStyles((theme) => ({
+//   root: {
+//     "& > *": {
+//       margin: theme.spacing(1),
+//       width: "25ch"
+//     }
+//   },
+//   flex: {
     
-  },
-  card: {
-    minWidth: 300,
+//   },
+//   card: {
+//     minWidth: 300,
     
-  }
-}));
+//   }
+// }));
 
 
 export default function HomePage() {
