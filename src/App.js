@@ -34,7 +34,8 @@ useEffect(() => {
     <currentProductDetails.Provider value={{product:product, state:state, setState:setState , cartItems:cartItems, setCartItems:setCartItems}}>
     <PrimarySearchAppBar />
     <Routes>
-      <Route path='/' element={<HomePage />} />
+    <Route path='/' element={<HomePage />} />
+      <Route path='/Flipkart-Clone' element={<HomePage />} />
       <Route path='/product' element={<ProductPage />} />
       <Route path="/viewcart" element={<Cart />} />
     </Routes>
