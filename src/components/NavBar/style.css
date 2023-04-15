@@ -117,6 +117,11 @@
     font-size: 26px !important;
 }
 
+.css-1x7skt0{
+    background-color: rgb(25, 118, 210) !important;
+    color: rgb(255, 255, 255) !important;
+}
+
 @media only screen and (max-width: 1050px){
     .MuiInputBase-input{
         width: 320px !important;
