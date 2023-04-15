@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { tileData } from "./data";
 import CarouselComp from "../Banner/CarouselComp";
 import { currentProductDetails } from "../../App";
 import './style.css'
@@ -34,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function HomePage() {
 
-  const classes = useStyles();
+  // const classes = useStyles();
   const navigate = useNavigate();
   const context = useContext(currentProductDetails)
   const tileData = context.product
@@ -51,7 +50,7 @@ export default function HomePage() {
         }}
       >
         {tileData.map((tile) => (
-          <Card
+          <Card  key={tile.id}
             style={{margin: "1rem", width: "20%" }}
             className="box_list"
             onClick={() => {

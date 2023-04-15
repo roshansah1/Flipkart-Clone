@@ -1,15 +1,14 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext,  useState } from "react";
 import "./product-page.css";
 import { currentProductDetails } from "../../App";
 // import star from '../../images/star1.webp'
 import { useDispatch } from "react-redux";
 import { addCart } from "../redux/action";
-import { tileData } from "../HomePage/data";
 import { useNavigate } from "react-router-dom";
 
 const ProductPage = () => {
   const context = useContext(currentProductDetails);
-   const [currentItem, setCurrentItem] = useState(
+   const [currentItem] = useState(
     JSON.parse(localStorage.getItem("currentProductDetails"))
    );
    const [cartName, setCartName] = useState("ADD TO CART")
@@ -56,6 +55,7 @@ const ProductPage = () => {
           //src={currentItem.image}
           height="100%"
           width="80%"
+          alt="current-product"
           style={{
             boxShadow: "1px 1px 2px #e1e1e1",
             padding: "20px 20px",
@@ -136,7 +136,8 @@ const ProductPage = () => {
           <img
             src="https://rukminim1.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90"
             height="15px"
-            width="15px" />
+            width="15px"
+            alt="offer-1" />
           &nbsp;<b>Bank Offer </b> 10% off on Samsung axis Bank credit card{" "}
           <b>T&C</b>
         </p>
@@ -145,6 +146,7 @@ const ProductPage = () => {
             src="https://rukminim1.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90"
             height="15px"
             width="15px"
+            alt="offer-2" 
            />
           &nbsp;<b>Bank Offer </b> 10% off on DBS Bank Debit and Credit Card
           Transactions, up to ₹750. above <b>T&C</b>
@@ -154,6 +156,7 @@ const ProductPage = () => {
             src="https://rukminim1.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90"
             height="15px"
             width="15px"
+            alt="offer-3" 
           />
           &nbsp;<b>Bank Offer </b> 10% off on IDBI Bank Debit and Credit Card
           Transactions, up to ₹500.
@@ -163,6 +166,7 @@ const ProductPage = () => {
             src="https://rukminim1.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90"
             height="15px"
             width="15px"
+            alt="offer-4" 
           />
           &nbsp;<b>Bank Offer </b> Buy this Product and Get Extra ₹500 Off on
           Bikes & Scooters

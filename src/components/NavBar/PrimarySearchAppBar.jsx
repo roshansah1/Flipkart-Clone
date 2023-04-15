@@ -9,16 +9,12 @@ import InputBase from '@mui/material/InputBase';
 import Badge from '@mui/material/Badge';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import AccountCircle from '@mui/icons-material/AccountCircle';
-import MailIcon from '@mui/icons-material/Mail';
-import NotificationsIcon from '@mui/icons-material/Notifications';
-import MoreIcon from '@mui/icons-material/MoreVert';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import "./style.css"
 import { useNavigate } from 'react-router-dom';
-import { currentProductDetails } from '../../App';
+// import { currentProductDetails } from '../../App';
 import { useSelector } from 'react-redux';
 
 const Search = styled('div')(({ theme }) => ({
@@ -69,7 +65,7 @@ export default function PrimarySearchAppBar() {
   // const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
   const navigate = useNavigate()
 
-  const context = React.useContext(currentProductDetails);
+  // const context = React.useContext(currentProductDetails);
 
   const data = useSelector(state => state.handleCart)
 
