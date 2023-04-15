@@ -49,7 +49,7 @@ export default function HomePage() {
           justifyContent: "center",
         }}
       >
-        {tileData.map((tile) => (
+        {tileData && tileData.map((tile) => (
           <Card  key={tile.id}
             style={{margin: "1rem", width: "20%" }}
             className="box_list"
