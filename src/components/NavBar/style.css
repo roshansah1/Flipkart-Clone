@@ -121,6 +121,10 @@
     background-color: rgb(25, 118, 210) !important;
     color: rgb(255, 255, 255) !important;
 }
+header{
+    background-color: rgb(25, 118, 210) !important;
+    color: rgb(255, 255, 255) !important;
+}
 
 @media only screen and (max-width: 1050px){
     .MuiInputBase-input{
