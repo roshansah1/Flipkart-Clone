@@ -49,7 +49,10 @@ export default function HomePage() {
           justifyContent: "center",
         }}
       >
-        {tileData && tileData.map((tile) => (
+      
+        {tileData.length <= 0 ? (<>Loading...</>) : (<>
+          {
+            tileData.map((tile) => (
           <Card  key={tile.id}
             style={{margin: "1rem", width: "20%" }}
             className="box_list"
@@ -81,7 +84,10 @@ export default function HomePage() {
               </CardContent>
             </CardActionArea>
           </Card>
-        ))}
+        ))
+          }
+        </>)  
+        }
         
       </div>
     </div>
