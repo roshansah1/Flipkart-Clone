@@ -4,6 +4,7 @@ import HomePage from './components/HomePage/HomePage'
 import ProductPage from './components/ProductPage/ProductPage'
 import Cart from './components/Cart/Cart'
 import {Route, Routes} from 'react-router-dom'
+import { useDispatch } from 'react-redux'
 export const currentProductDetails = createContext()
 const App = () => {
   const [state, setState] = useState(null)
@@ -16,6 +17,7 @@ const App = () => {
     DeliveryCharges:null
   });
   const [product, setProduct] = useState([])
+  const dispatch = useDispatch()
 
   const getData = () => {
     fetch("https://fakestoreapi.com/products")
@@ -34,10 +36,11 @@ useEffect(() => {
     <currentProductDetails.Provider value={{product:product, state:state, setState:setState , cartItems:cartItems, setCartItems:setCartItems}}>
     <PrimarySearchAppBar />
     <Routes>
-    <Route path='/' element={<HomePage />} />
+    {/* <Route path='/' element={<HomePage />} /> */}
       <Route path='/Flipkart-Clone' element={<HomePage />} />
-      <Route path='/product' element={<ProductPage />} />
-      <Route path="/viewcart" element={<Cart />} />
+      <Route path='/Flipkart-Clone/product' element={<ProductPage />} />
+      <Route path="/Flipkart-Clone/viewcart" element={<Cart />} />
+      {/* <Route path="/*" element={dispatch("/Flipkart-Clone")} /> */}
     </Routes>
     </currentProductDetails.Provider>
     </>
