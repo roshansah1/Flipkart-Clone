@@ -1,7 +1,6 @@
 
 .body_cart_container{
     background-color: #f1f3f6;
-    width: 100vw;
     height: calc(100vh - 64px);
     overflow-y: scroll;
     position: relative;
@@ -310,3 +309,20 @@
         min-width: 180px !important;
     }
 } 
+
+@media only screen and (min-width: 1600px){
+    .cart_container{
+        padding: 1.5em 0 0 20em;
+        
+    }
+
+    .left_cart_container{
+        width: 800px;
+    }
+
+    .right_cart_container{
+        width: 450px;
+        position: fixed;
+        right: 280px;
+    }
+}

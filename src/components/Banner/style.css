@@ -20,11 +20,14 @@
     width: 85%;
 }
 
+
 .css-ktslay-MuiButtonBase-root-MuiIconButton-root{
     border-radius: 50% !important;
     padding: 8px !important;
     margin: 0 10px !important;
-}
+ }
+
+
 
 @media only Screen and (max-width: 900px){
     .image{

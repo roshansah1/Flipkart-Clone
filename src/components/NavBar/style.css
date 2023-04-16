@@ -60,8 +60,8 @@
 }
 
 .css-hip9hq-MuiPaper-root-MuiAppBar-root .cart_icon{
-    display: flex;
-    align-items: center;
+    display: flex !important;
+    align-items: center !important;
     gap: 0.6rem !important;
 }
 
@@ -72,9 +72,9 @@
 .MuiMenu-list{
     display: flex;
     padding: 8px 8px !important;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
 }
 
 .MuiMenu-list li{
