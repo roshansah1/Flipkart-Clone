@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Flipkart-Clone/static/css/main.fac85fbc.css",
-    "main.js": "/Flipkart-Clone/static/js/main.859e3320.js",
+    "main.js": "/Flipkart-Clone/static/js/main.e1b5f23f.js",
     "index.html": "/Flipkart-Clone/index.html",
     "main.fac85fbc.css.map": "/Flipkart-Clone/static/css/main.fac85fbc.css.map",
-    "main.859e3320.js.map": "/Flipkart-Clone/static/js/main.859e3320.js.map"
+    "main.e1b5f23f.js.map": "/Flipkart-Clone/static/js/main.e1b5f23f.js.map"
   },
   "entrypoints": [
     "static/css/main.fac85fbc.css",
-    "static/js/main.859e3320.js"
+    "static/js/main.e1b5f23f.js"
   ]
 }
