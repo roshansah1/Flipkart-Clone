@@ -177,7 +177,7 @@ export default function PrimarySearchAppBar() {
             variant="h6"
             noWrap
             component="div"
-            onClick={() => navigate("./")}
+            onClick={() => navigate("./Flipkart-Clone")}
             sx={{ display: { xs: 'none', sm: 'block', fontWeight: "bold" , letterSpacing: "1px", cursor: "pointer"} }}
           >
             <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png" alt="flipkart-logo"/>
@@ -207,7 +207,7 @@ export default function PrimarySearchAppBar() {
               size="large"
               aria-label="show 17 new notifications"
               color="inherit"
-              onClick={() => navigate("/viewcart")}
+              onClick={() => navigate("/Flipkart-Clone/viewcart")}
             >
               
               <div className='cart_icon'>

@@ -43,13 +43,13 @@ const Cart = () => {
         <>
        <div className='empty_cart_container'>
        <div className='cart_text'>
-                <h4> KlipKart </h4>
+                <h4> FlipKart </h4>
               </div>
               <div className='empty_cart_details'>
                 <img src='https://rukminim1.flixcart.com/www/800/800/promos/16/05/2019/d438a32e-765a-4d8b-b4a6-520b560971e8.png?q=90' alt='empty-cart' />
                 <p>Your cart is empty!</p>
                 <p>Add items to it now.</p>
-                <button onClick={() => navigate("/")}>Shop now</button>
+                <button onClick={() => navigate("/FlipKart-Clone")}>Shop now</button>
               </div>
        </div>
         </>

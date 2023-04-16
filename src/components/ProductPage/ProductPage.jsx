@@ -69,7 +69,7 @@ const ProductPage = () => {
             onClick={() => {
               setCartName("GO TO CART")
               AddToCart(currentItem);
-              navigate("/viewcart")
+              navigate("/Flipkart-Clone/viewcart")
             }}
           >
             <svg
@@ -89,7 +89,7 @@ const ProductPage = () => {
           </button>
           <button id="btn_checkout" onClick={() => {
               AddToCart(currentItem);
-              navigate("/viewcart")
+              navigate("/Flipkart-Clone/viewcart")
             }}>
             <svg
               class="_1KOMV2"

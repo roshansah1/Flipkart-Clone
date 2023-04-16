@@ -59,7 +59,7 @@ export default function HomePage() {
             onClick={() => {
               context.setState(tile)
               localStorage.setItem("currentProductDetails", JSON.stringify(tile))
-              navigate("/product")
+              navigate("/Flipkart-Clone/product")
             }}
           >
             <CardActionArea>

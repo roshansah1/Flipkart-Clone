@@ -3,8 +3,8 @@ import PrimarySearchAppBar from './components/NavBar/PrimarySearchAppBar'
 import HomePage from './components/HomePage/HomePage'
 import ProductPage from './components/ProductPage/ProductPage'
 import Cart from './components/Cart/Cart'
-import {Route, Routes} from 'react-router-dom'
-import { useDispatch } from 'react-redux'
+import {Route, Routes, useNavigate} from 'react-router-dom'
+import ProtectedRoutes from './components/ProtectedRoutes/ProtectedRoutes'
 export const currentProductDetails = createContext()
 const App = () => {
   const [state, setState] = useState(null)
@@ -17,7 +17,7 @@ const App = () => {
     DeliveryCharges:null
   });
   const [product, setProduct] = useState([])
-  const dispatch = useDispatch()
+  
 
   const getData = () => {
     fetch("https://fakestoreapi.com/products")
@@ -40,7 +40,7 @@ useEffect(() => {
       <Route path='/Flipkart-Clone' element={<HomePage />} />
       <Route path='/Flipkart-Clone/product' element={<ProductPage />} />
       <Route path="/Flipkart-Clone/viewcart" element={<Cart />} />
-      {/* <Route path="/*" element={dispatch("/Flipkart-Clone")} /> */}
+      <Route path="/*" element={<ProtectedRoutes />} />
     </Routes>
     </currentProductDetails.Provider>
     </>
