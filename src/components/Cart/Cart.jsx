@@ -70,7 +70,7 @@ const Cart = () => {
                             <div className='image_item'>
                               <img src={ele.image} alt={ele.title} onClick={() => {
                                 localStorage.setItem("currentProductDetails", JSON.stringify(ele))
-                                navigate("/product")
+                                navigate("/Flipkart-Clone/product")
                               }}/>
                             </div>
 
@@ -79,7 +79,7 @@ const Cart = () => {
                             <div className='title_text'>
                               <p onClick={() => {
                                 localStorage.setItem("currentProductDetails", JSON.stringify(ele))
-                                navigate("/product")
+                                navigate("/Flipkart-Clone/product")
                               }}>{ele.title.length <= 53 ? ele.title : ele.title.substr(0, 50) + "..."}</p>
                               <p>{ele.description.substr(0, 53) + "..."}</p>
                             </div>
