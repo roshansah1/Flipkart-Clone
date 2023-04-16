@@ -218,7 +218,7 @@ export default function PrimarySearchAppBar() {
               </div>
               
             </IconButton>
-            <IconButton
+            {/* <IconButton
               size="large"
               edge="end"
               aria-label="account of current user"
@@ -228,7 +228,7 @@ export default function PrimarySearchAppBar() {
               color="inherit"
             >
               <AccountCircle />
-            </IconButton>
+            </IconButton> */}
           </Box>
           {/* <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
             <IconButton
@@ -245,7 +245,7 @@ export default function PrimarySearchAppBar() {
         </Toolbar>
       </AppBar>
       {/* {renderMobileMenu} */}
-      {renderMenu}
+      {/* {renderMenu} */}
     </Box>
   );
 }
