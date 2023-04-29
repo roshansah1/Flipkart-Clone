@@ -1,6 +1,6 @@
 ## [Flipkart Clone](https://roshansah1.github.io/Flipkart-Clone/)
 
---> This is a simple pizza website created using React, Redux, HTML, CSS, and JavaScript.
+--> This is a simple E-commerce website created using React, Redux, HTML, CSS, and JavaScript.
 
 ## Features
 
