@@ -34,7 +34,7 @@ const Cart = () => {
 
  useEffect(() => {
   updatePrice()
- },[button])
+ },[data])
   
  
   return (

@@ -15,16 +15,27 @@ function Item(props)
 
 var items = [
   {
-      img : "https://i.postimg.cc/KzkJD98z/Screenshot-2023-03-03-151000.png"
+      img : "https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/1a94e4906dbe1a5a.jpg?q=50"
   },
   {
-     img : "https://i.postimg.cc/fL9f9J8S/Screenshot-2023-03-03-151055.png"
+     img : "https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/80bc7056c646cab1.jpg?q=50"
   },
   {
-    img : "https://i.postimg.cc/dVfCjJk2/Screenshot-2023-03-03-151147.png"
+    img : "https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/1ee1f1ae3fe91a6f.jpeg?q=50"
   },
   {
-    img : "https://i.postimg.cc/44wm1XjY/Screenshot-2023-03-03-151223.png"
+    img : "https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/7aa9ebb51e2e9e9a.jpeg?q=50"
+  },
+  {
+    img : "https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/eae4266dd6a2371c.jpeg?q=50"
+  },{
+    img : "https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/693ffb3d86ae9108.jpeg?q=50"
+  },
+  {
+    img : "https://rukminim1.flixcart.com/fk-p-flap/3376/560/image/695c3f2c3e58d89b.jpg?q=50"
+  },
+  {
+    img : "https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/73fafc2bcb3c8467.jpg?q=50"
   }
 ]
 
@@ -36,7 +47,7 @@ const CarouselComp = () => {
     <Carousel className='slider'
                 autoPlay={true}
                 stopAutoPlayOnHover={true}
-                interval={5000}
+                interval={3000}
                 animation={"slide"}
                 swipe={true}
                 navButtonsAlwaysVisible={false}

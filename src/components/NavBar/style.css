@@ -185,3 +185,10 @@ header{
 }
 
 }
+
+
+@media (min-width: 600px){
+.css-hyum1k-MuiToolbar-root {
+    min-height: 57px !important;
+}
+}

@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-around;
     list-style-type: none;
-    padding: 1rem;
+    padding: 0.8rem;
     width: 50%;
 }
 .category_list li{
@@ -31,6 +31,7 @@ li p{
 .category_list img{
     height: 64px;
     width: 64px;
+    border-radius: 50%;
 }
 
 @media only Screen and (max-width: 900px){

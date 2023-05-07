@@ -73,7 +73,7 @@ export default function HomePage() {
               />
               <CardContent style={{textAlign:"center"}}>
                 <Typography style={{  fontWeight:"700"}} gutterBottom variant="body2" component="h2" noWrap>
-                  {tile.title}
+                  {tile.title.length > 38 ? tile.title.slice(0,36)+"..." : tile.title}
                 </Typography>
                 <Typography style={{ color:"green"}} gutterBottom variant="body2" component="h2" noWrap>
                    $ {tile.price}
